@@ -10,4 +10,8 @@ class Todo extends Model
     use HasFactory;
 
     protected $fillable = ['item', 'isComplete'];
+
+    public function author(){
+        return $this->belongsTo(User::class);
+    }
 }

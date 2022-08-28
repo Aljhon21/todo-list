@@ -15,9 +15,11 @@ return new class extends Migration
     {
         Schema::create('todos', function (Blueprint $table) {
             $table->id();
+            $table->bigInteger('user_id')->unsigned();
             $table->string('item');
             $table->boolean('isComplete')->default(false);
             $table->timestamps();
+            $table->foreign('user_id')->references('id')->on('users');
         });
     }
 
