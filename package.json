@@ -21,6 +21,10 @@
     "dependencies": {
         "@headlessui/vue": "^1.6.7",
         "@heroicons/vue": "^1.0.6",
-        "vue-router": "^4.1.4"
+        "js-cookie": "^3.0.1",
+        "vform": "^2.1.2",
+        "vue-router": "^4.1.4",
+        "vuex": "^4.0.2",
+        "vuex-shared-mutations": "^1.0.2"
     }
 }
